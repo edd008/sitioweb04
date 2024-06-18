@@ -1,0 +1,468 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.navbar-nav {
+    margin-left: auto; /* Mueve los enlaces a la derecha */
+  }
+
+
+  .carousel-item {
+    position: relative; /* Añadido para posicionar el texto */
+    height: 700px;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .carousel-item .carousel-caption {
+    margin-block:220px;
+    text-align: left;
+    font-size: 2.5rem; 
+  }
+
+
+  .carousel-caption h3 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 0.5rem; /* Espacio inferior del título */
+    color:black;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Radio de los bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+   
+  }
+
+  .carousel-caption p {
+    
+    margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+    color: white;
+    border-radius: 10px; /* Radio de los bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+   
+
+  }
+
+
+  .carousel-inner,
+  .carousel-item {
+      border-radius: 10px; /* Ajusta el radio de los bordes según sea necesario */
+      overflow: hidden; /* Asegura que los bordes redondeados sean visibles */
+      border: 2px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, green, orange);
+      
+  }
+  
+/* Estilo para el fondo de "Productos" */
+.carousel-caption .productos {
+    background-color: green; /* Color de fondo para "Productos" */
+    padding: 5px 10px; /* Ajuste del relleno */
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+    border-radius: 30px; /* Borde redondeado para el fondo */
+}
+
+/* Estilo para el fondo de "Servicios" */
+.carousel-caption .servicios {
+    background-color: orange; /* Color de fondo para "Servicios" */
+    padding: 5px 10px; /* Ajuste del relleno */
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+    border-radius: 30px; /* Borde redondeado para el fondo */
+}
+
+
+
+
+/*SECCION DE MEJORES FRUTAS*/
+    
+.contenedor-frutas {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.frutas-imagen {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.frutas-imagen-inner {
+    width: 350px; /* Tamaño deseado para la imagen */
+    height: 350px; /* Tamaño deseado para la imagen */
+    border-radius: 50%; /* Hace que la imagen sea un círculo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el círculo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.imagen-frutas {
+    width: 100%; /* Ajusta la imagen para que se ajuste al contenedor circular */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+}
+
+.frutas-contenido {
+    flex: 1;
+}
+
+.frutas-contenido h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.frutas-contenido p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.lista-check {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista-check li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.lista-check li i {
+    margin-right: 10px;
+}
+
+.boton-mas-info {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.boton-mas-info:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+/*SECCION NOS CARACTERIZA*/
+
+.nos-caracteriza {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.caracteristicas-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espacio entre las características */
+}
+
+.caracteristica {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caracteristica img {
+    width: 80px; /* Ajusta el tamaño de los íconos según sea necesario */
+    height: 80px; /* Ajusta el tamaño de los íconos según sea necesario */
+    margin-bottom: 15px;
+}
+
+.caracteristica h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.caracteristica p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.caracteristica a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.caracteristica a:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Espaciado entre las tarjetas de productos */
+.card {
+    margin-bottom: 30px;
+}
+
+/* Estilo adicional para los botones */
+.btn-primary {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-secondary {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/*visita nuestras fincas*/
+.visit-our-farms {
+    background-color: #36b03c; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 50px 20px; /* Espaciado interno */
+}
+
+.content-wrapper {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    justify-content: space-between; /* Espaciamos los elementos */
+    align-items: center; /* Centramos los elementos verticalmente */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centramos el contenido horizontalmente */
+}
+
+.text-content {
+    max-width: 70%; /* Ancho máximo del texto */
+}
+
+.visit-our-farms h1 {
+    font-size: 2.5rem; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+.visit-our-farms p {
+    font-size: 1.125rem; /* Tamaño de fuente del párrafo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+.button-wrapper {
+    flex-shrink: 0; /* Evitamos que el botón se encoja */
+}
+
+.visit-button {
+    background-color: #ff4500; /* Fondo naranja del botón */
+    color: white; /* Texto blanco del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+}
+
+.visit-button:hover {
+    background-color: #e63e00; /* Fondo más oscuro al pasar el cursor */
+}
+
+
+
+/* ESTILOS PARA EL footer */
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    
+}
+
+.branding h1 {
+    font-size: 2rem;
+    
+}
+
+.branding .text-secondary {
+    color: #6c757d; /* Color secundario para la parte 'oo' de Foody */
+   
+}
+
+.contact-info,
+.quick-links {
+    text-align: left;
+      color: #fff;
+}
+
+.contact-info p,
+.quick-links a {
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.contact-info i,
+.quick-links a {
+    margin-right: 10px;
+}
+
+.quick-links a {
+    display: block;
+    text-decoration: none;
+    color: #495057;
+    transition: color 0.3s;
+}
+
+.quick-links a:hover {
+    color: #007bff;
+}
+
+.contact-info h4 {
+    color: #fff; /* Cambia el color del título h4 a blanco */
+}
+
+.quick-links h4 {
+    color: #fff; /* Cambia el color del título h4 a blanco */ 
+}
+
+
+
+
+
+
+
+
+
+.nos-caracteriza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
